@@ -1,0 +1,14 @@
+Wat is het:
+Een webapp om Excelbestanden in de browser te kunnen bekijken.
+Indien een geupload bestand dezelfde naam heeft als een nieuw bestand, wordt deze
+impliciet overschreven.
+
+Onderdelen:
+-Keuzemenu voor het kiezen van Excelbestanden om te bekijken
+-Mogelijkheid om bestand te uploaden
+-Mogelijkheid om opgeslagen bestanden te verwijderen
+
+Dependencies:
+-PHP7
+-php-xml
+-SLIM/Twig

@@ -1,0 +1,4 @@
+/test_files/
+composer.phar
+/vendor/
+composer.lock

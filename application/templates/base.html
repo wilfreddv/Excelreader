@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>{{ title }}</title>
+    <style>
+        table,
+        th,
+        td {
+          padding: 10px;
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    {% for flash in flashes %} <!-- mimic flash messages -->
+        {{ flash }} </br>
+    {% endfor %}
+    
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
