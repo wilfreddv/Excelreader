@@ -16,7 +16,8 @@ $app->get('/', function (Request $request, Response $response, $args) {
     // Check if argument `d` is passed
     $view = new View();
 
-    if( ($to_delete = $request->getQueryParams()['d'] ) ) {
+    if( array_key_exists('d', $request->getQueryParams()) ) {
+        $to_delete = $request->getQueryParams()['d'];
         if( !(new Controller())->delete_file($to_delete) ) { // Error deleting file
             $view->add_flash("Error deleting file `" .$to_delete. "`.");
         }
